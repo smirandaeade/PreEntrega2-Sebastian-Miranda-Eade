@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    border-bottom: 1px #2a2a2a solid;
+}
+
+#gridHeader{
+    display: grid;
+    grid-template-areas:
+    "smedia"
+    "logo";
+    grid-template-rows: 6rem 1fr;
+    
+}
+
+main{
+    margin-top: 2rem;
+    
+}
+
+#gridMainIndex{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "foto foto"
+    "titulo titulo"
+    "opinion opinion"
+    "ofrecemos ofrecemos";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6rem 1fr 10rem 1fr 20rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2{
+    font-size: 2rem;
+}
+
+.contenedorSocialMedia {
+    display: flex;
+    grid-area: smedia;
+}
+
+.socialMediaIcon {
+    padding: 1rem;
+}
+
+.widePhoto {
+    width: 100%;
+    height: 50rem;
+    background-image: url(../img/mainphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    grid-area: foto;
+}
+
+.imgLogo {
+    text-align: center;
+    grid-area: logo;
+}
+
+.imgLogo img {
+    width: 30rem;
+    margin-bottom: 4rem;
+}
+
+
+.barraNavegacion {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: black;
+    top: 0px;
+    position: sticky;
+    padding: 1rem;
+    min-width: 30%;
+    grid-area: nav;
+}
+
+.barraNavegacion p{
+    margin: 0 auto;
+}
+
+.barraNavegacion :last-child {
+    border-right: none;
+}
+
+.barraNavegacion a {
+    padding: 1rem 4rem;
+    border-right: 1px #2a2a2a solid;
+}
+
+.tituloH1 {
+    
+    text-align: center;
+    grid-area: titulo;
+}
+
+.contenedorPersonas {
+    display: grid;
+    margin: 5rem 10rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: opinion;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.5rem;
+}
+
+.personaOpinion {
+    display: flex;
+    align-items: center;
+    border: 0.5rem solid;
+    padding: 2rem;
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0), #c9e265, rgba(0,0,0,0))1 100%;
+
+}
+
+.personaOpinion p {
+    padding: 0 1rem;
+}
+
+.contenedorPersonas img {
+    width: 9rem;
+}
+
+.contenedorPersonas p {
+    margin: 0 0;
+}
+
+.contenedorBotonMenu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-area: ofrecemos;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedorBotonMenu button {
+    width: 35rem;
+    padding: 1rem;
+    height: 10rem;
+    font-size: 3rem;
+    align-content: center;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #c9e265, #8bb74d, #c9e265);
+    border: 0;
+    border-radius: .25rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+    border-top: 1px #2a2a2a solid;
+    padding: 2rem;
+    grid-template-areas: 
+    "recerved smedia";
+}
+
+.footer .contenedorSocialMedia{
+    justify-content: flex-end;
+}
+
+.footer img {
+    width: 10rem;
+
+}
+
+.contenedorRes{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contenedorReserved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: recerved;
+}
+
+.footer p {
+    margin: 0 0;
+    font-size: 1.5rem;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 1;
+}
+
+.whatsapp img {
+    width: 7rem;
+}
+
+.contenedorMenu{
+    max-width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+    border: 0.5rem solid;
+    padding: 2rem;
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0), #c9e265, rgba(0,0,0,0))1 100%;
+}
+.infoMenu{
+    display: inline-block;
+    margin: 0 4rem;
+}
+.contenedorMenu p{
+    font-size: 1.5rem;
+}
+
+.contenedorMenu img{
+    width: 20rem;
+}
+
+.infoMenu{
+    width: 20rem;
+}
+
+.contenedorMomentos{
+    max-width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+    border: 0.5rem solid;
+    padding: 2rem;
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0), #c9e265, rgba(0,0,0,0))1 100%;
+}
+
+.contenedorMomentos img{
+    width: 20rem;
+    display: inline-block;
+    margin: 0 4rem;
+}
+
+.instagramLogo img{
+    width: 7rem;
+    margin-left: 4rem;
+}
+
+.instagramLogo *{
+    display: inline-block;
+}
+
+.youtubeMedia{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border: 0.5rem solid;
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0), #c9e265, rgba(0,0,0,0))1 100%;
+}
+
+.youtubeMedia iframe{
+    padding: 3rem;
+}
+
+.seccionNosotros{
+    max-width: 70%;
+    padding: 0 3rem;
+    margin: 10rem auto;
+    border: 0.5rem solid;
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0), #c9e265, rgba(0,0,0,0))1 100%;
+}
+.alignItems{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    text-align: justify;
+    align-items: center;
+}
+
+.alignItems *{
+    width: 50rem;
+}
+
+#gmap_canvas{
+    width: 400px 400px;
+}
+
+.formulario label, .formulario input{
+    font-size: 2rem;
+}
+.formulario input, textarea{
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.formulario input{
+    width: 30rem;
+}
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 20rem;
+    font-size: 2rem;
+}
+
+.formulario ul li{
+    margin-top: 2rem;
+}
+
+.formulario ul{
+    padding-right: 4rem;
+}
+
+.formulario{
+    width: 70rem;
+    margin: 0 auto;border: 0.5rem solid;
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0), #c9e265, rgba(0,0,0,0))1 100%;
+}
